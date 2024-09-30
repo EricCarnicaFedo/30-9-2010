@@ -1,0 +1,170 @@
+/* Estilo Geral do Corpo da Página */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/flat-international-cat-day-background-with-cat-paws_23-2149459818.jpg?t=st=1726834693~exp=1726838293~hmac=7d391b180e9eac3071eb2eb333911485cb851e9c09ba69b458167775cecb5320&w=1380'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+/* Container do Formulário */
+.form-container {
+  
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 75px 35px 130px 450px;
+  width: 100%;
+  max-width: 750px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao Passar o Mouse sobre o Container */
+.form-container:hover {
+  transform: translateY(-5px); /* Pequeno efeito de elevação */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Cabeçalho do Formulário */
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Rótulos dos Campos */
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o label */
+}
+
+/* Campos de Entrada e Seleção */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição para inputs */
+}
+
+/* Efeito de Foco nos Campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #28a745; /* Cor verde ao focar */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Efeito de sombra ao focar */
+}
+
+/* Botão de Envio */
+button.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto do botão */
+}
+
+/* Efeito de Hover no Botão */
+button.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Cabeçalho Secundário */
+h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Informações de Redirecionamento */
+.redirect-info {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Link de Redirecionamento */
+.redirect-link {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Efeito de Hover no Link de Redirecionamento */
+.redirect-link:hover {
+  text-decoration: underline;
+}
+
+
+button[type="submit"] {
+  background-color: #dfa146;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.titulo-login {
+  font-size: 66px;
+  font-weight: bold;
+  font-family: "Fascinate Inline", system-ui;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.image-do-formulario{
+  margin-bottom: -290px;
+  transform: translateX(-410px);
+  width: 350px;
+  height: auto;
+}

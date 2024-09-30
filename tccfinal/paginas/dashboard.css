@@ -1,0 +1,50 @@
+
+.dashboard-container {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-left: 120px;
+    flex-wrap: wrap; /* Permite que os cartões se movam para a próxima linha em telas menores */
+}
+  
+
+.dashboard-card {
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 60%; /* Largura padrão para cartões, ajustável conforme necessário */
+    min-width: 250px; /* Largura mínima para evitar que os cartões fiquem muito pequenos */
+    flex: 1; /* Faz com que os cartões se expandam igualmente */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+.dashboard-card i {
+    font-size: 24px;
+    color: #08c237;
+    margin-bottom: 10px;
+}
+
+.dashboard-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,1276 @@
+/* Google Font Import - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+* {
+
+    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* ===== Colors ===== */
+  --body-color: #e4e9f7;
+  --primary-color: #3d553f;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #261a17;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+html, body {
+padding-bottom: 400px;
+  margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    width: 100%; /* Garante que a largura do body ocupe 100% da tela */
+    overflow-x: hidden; /* Evita rolagem horizontal se houver um elemento fora da tela */
+  min-height: 100vh;
+  background-color: var(#f5edd8);
+  transition: var(--tran-05);
+}
+.fundoimagem{
+  transform: translateY(30px);
+  z-index: -10;
+}
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+}
+
+/* Home */
+.home {
+  padding: 20px;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+
+.home .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+body.dark .home .text {
+  color: var(--text-color);
+}
+
+
+/* Login Form Styles */
+.login-form {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form .input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login-form .input-field i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.curvinha {
+  margin: 0;
+  transform: translateY(930px);
+
+}
+
+/*sidebar */
+/* cores do footer */
+:root {
+  --primary-color: #121715;
+  ;
+  --secondary-color:
+  #121715;
+  ;
+  --text-color: white;
+  --accent-color:
+    white;
+
+}
+
+.caixota {
+  
+  width: 50%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    transform: translateY(-30%);
+  /* Largura do elemento 50% do contêiner pai */
+}
+
+.saibamais {
+  transform: translateY(-60px);
+  background-color: #484c52; /* Cor de fundo cinza escuro equivalente a bg-gray-800 */
+ font-size: 10px;
+}
+
+
+.text-gray-600{
+  transform: translateY(-100px);
+}
+
+.textinho {
+  font-size: 150px; /* Tamanho de fonte equivalente a text-6xl no Tailwind */
+  font-weight: bold; /* Texto em negrito */
+  color: #454647; /* Cor de texto cinza escuro equivalente a text-gray-800 no Tailwind */
+  text-align: center; /* Alinha o texto centralmente */
+}
+.textinho-etec{
+  transform: translateY(-30%);
+  font-size: 150px; /* Tamanho de fonte equivalente a text-6xl no Tailwind */
+  font-weight: bold; /* Texto em negrito */
+  color: #454647; /* Cor de texto cinza escuro equivalente a text-gray-800 no Tailwind */
+  text-align: center; /* Alinha o texto centralmente */
+}
+.flex {
+  display: flex;
+  /* Aplica flexbox para organização flexível dos itens filhos */
+}
+
+.flex-col {
+  flex-direction: column;
+  /* Organiza os itens filhos em coluna */
+}
+
+.items-center {
+  align-items: center;
+  /* Centraliza os itens horizontalmente */
+}
+
+.justify-center {
+  justify-content: center;
+  /* Centraliza os itens verticalmente */
+}
+
+.text-center {
+  text-align: center;
+  /* Alinha o texto centralmente */
+}
+
+.space-y-4>*+* {
+  margin-top: 1rem;
+  /* Adiciona espaçamento vertical entre os elementos filhos */
+}
+
+.text-6xl {
+  font-size: 4rem;
+  /* Tamanho da fonte para h1 (equivalente a text-6xl no Tailwind) */
+}
+
+.font-bold {
+  font-weight: bold;
+  /* Texto em negrito */
+}
+
+.text-gray-800 {
+  color: #2d3748;
+  /* Cor de texto cinza escuro */
+}
+
+.text-gray-600 {
+  color: #4a5568;
+  /* Cor de texto cinza médio */
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+  /* Cor de fundo cinza escuro */
+}
+
+.text-white {
+  color: #fff;
+  /* Cor de texto branca */
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  /* Espaçamento interno superior */
+  padding-bottom: 0.5rem;
+  /* Espaçamento interno inferior */
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  /* Espaçamento interno esquerdo */
+  padding-right: 1.5rem;
+  /* Espaçamento interno direito */
+}
+
+.rounded {
+  border-radius: 0.25rem;
+  /* Canto arredondado */
+}
+
+button {
+ 
+  font-size: 1.2em;
+  /* Ajuste o tamanho da fonte conforme necessário para o botão */
+}
+
+a.tel-link {
+transform: translateX(40px);
+
+  background-color: 
+  #66b0c0;
+  /* Cor de fundo */
+  color: white;
+  /* Cor do texto */
+  padding: 0.5rem 1rem;
+  /* Espaçamento interno */
+
+  text-decoration: none;
+  /* Remover sublinhado padrão de link */
+  display: inline-block;
+  /* Para ocupar apenas o espaço necessário */
+  font-weight: 100;
+  /* Negrito no texto */
+  text-align: center;
+  /* Alinhamento do texto */
+
+}
+
+a.tel-link:hover {
+  background-color: #2f4c85;
+  /* Cor de fundo ao passar o mouse */
+}
+
+.icon {
+  font-size: 8.5rem;
+  /* equivalente a text-2xl no Tailwind CSS */
+  color: #3A5EB8;
+}
+
+.text {
+  transform: translateY(20%);
+  color: #80756a;
+  font-weight: bold;
+  font-size: 3.25rem;
+  /* equivalente a text-xl no Tailwind CSS */
+}
+
+.titulonavbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-shadow: 
+  -1px -1px 0px #FFF, 
+  -1px 1px 0px #FFF,                    
+   1px -1px 0px #FFF,                  
+   1px 0px 0px #FFF;
+
+  /* equivalente a space-x-2 no Tailwind CSS */
+}
+
+.navbarconteudo {
+  transform: translateY(-90%);
+
+  font-size: 1.10em;
+  margin-right: -900px;
+  margin-bottom: -10px;
+  /* equivalente a space-x-6 no Tailwind CSS */
+  color: #4B5563;
+  /* equivalente a text-gray-600 no Tailwind CSS */
+}
+
+header {
+  background-color:
+  #afd4c3;
+  color: white;
+  padding: 0 200px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  justify-content: space-between;
+  border-bottom: 4px solid #261a17;
+}
+
+
+
+
+nav ul {
+
+
+
+
+  list-style-type: none;
+}
+
+nav ul li {
+
+  display: inline;
+  padding: 0;
+}
+
+nav ul li a {
+
+
+  border-radius: 5px;
+  padding: 5px 17px;
+  color: black;
+  text-decoration: none;
+  margin: -5px;
+}
+
+.customize-button,
+.menu-button {
+  position: absolute;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  color: black;
+  padding: 12px 26px 19px 20px;
+  margin: -10px;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+  ;
+  outline: none;
+  right: 1rem;
+}
+
+.customize-button {
+  right: 3rem;
+}
+
+.menu-button {
+  left: 1rem;
+}
+
+.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.features,
+.about,
+.contact,
+.appointments,
+.patients {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features img,
+.about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features .feature-item {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-theme header {
+  background: #1c1c1c;
+}
+
+.dark-theme footer {
+  background: #1c1c1c;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+#color-picker {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#color-picker input[type="color"] {
+  border: none;
+  width: 100%;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100%;
+  /* Alterando a largura para 200px */
+  position: fixed;
+  top: 0;
+  left: -235px;
+  /* Certifique-se de ajustar isso também para manter a sidebar fora da tela */
+  background-color:
+    #afd4c3;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-bottom: 60px;
+  border-radius: 0 15px 15px;
+  /* Borda arredondada */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  /* Sombra mais pronunciada ao passar o mouse */
+  z-index: 2;
+}
+
+.sidebar:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  /* Sombra mais pronunciada ao passar o mouse */
+}
+
+.sidebar a {
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  /* Adicionando borda com raio */
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.sidebar-text {
+  margin-left: 20px;
+  /* Adicionando margem à esquerda apenas para os textos */
+}
+
+.closebtn i {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  /* Sombra mais pronunciada ao passar o mouse */
+  border-radius: 50%;
+  /* Faz o ícone redondo */
+  background-color: black;
+  /* Define a cor de fundo do ícone */
+  padding: 7px;
+  /* Adiciona um pouco de preenchimento para espaçar o ícone da borda */
+}
+
+.closebtn i {
+  background-color: #556B2F;
+  /* Cor de fundo padrão do círculo no tema claro */
+}
+
+body.dark-theme .closebtn i {
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+
+/* Estilo para o tema escuro */
+body.dark-theme .closebtn i.bx {
+  transition: color 0.3s ease;
+  color: black;
+  /* Cor do ícone BX no tema escuro */
+}
+
+.closebtn {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  transform: translateX(275%);
+  font-size: 36px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  padding: 0;
+  /* Remover o preenchimento */
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  /* Cor de fundo da área do cabeçalho */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.sidebar-header img {
+  width: 40px;
+  /* Define a largura do ícone de logo */
+  height: 40px;
+  /* Define a altura do ícone de logo */
+  margin-right: 10px;
+  /* Espaçamento à direita para separar a logo do título */
+}
+
+.sidebar-header {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  /* Para posicionar os elementos no início e no final do contêiner */
+
+  /* Cor de fundo da área do cabeçalho */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: black;
+  font-size: 24px;
+}
+
+.sidebar-header img {
+
+  width: 40px;
+  /* Define a largura do ícone de logo */
+  height: 40px;
+  /* Define a altura do ícone de logo */
+  /* Espaçamento entre o ícone e o título */
+}
+
+/* barra de pesquisa */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  width: 100px;
+  /* Alteração da largura para 150px */
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#search-bar {
+  border: none;
+  /* Remover a borda */
+  padding: 17px 16px 14px 14px;
+  /*efinir o preenchimento desejado */
+  outline: none;
+  /* Remover o contorno ao focar */
+
+  background-color: white;
+  /*ornar o campo de pesquisa transparente */
+}
+
+#search-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+.sidebar a#theme-toggle-sidebar {
+
+  margin-top: 20px;
+  /* Adicione espaço acima do botão */
+  color: white;
+}
+
+.bx-search {
+  color: black;
+  padding: 12px 28px 17px 22px;
+  margin: -13px;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+  ;
+  outline: none;
+}
+
+.search-bar {
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+
+  ;
+}
+
+.tema {
+  color: black;
+  padding: 10px 57px 13px 20px;
+  margin: -10px;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+  ;
+  border: none;
+  outline: none;
+}
+
+body.dark-theme .sidebar a {
+  transition: color 0.3s ease;
+  color: white;
+  /* Cor do ícone BX no tema escuro */
+}
+
+body.dark-theme .sidebar-header h2 {
+  transition: color 0.3s ease;
+  color: white;
+  /* Cor do ícone BX no tema escuro */
+}
+
+#customize-button {
+  /* Estilo padrão do botão */
+  font-size: 20px;
+  transition: transform 0.5s ease;
+  /* Adiciona uma transição suave */
+}
+
+
+.rotated {
+  /* Aplica a rotação quando a classe 'rotated' é adicionada */
+  transform: rotate(360deg);
+}
+
+.btn-login {
+
+  width: 120px;
+  height: 40px;
+  border: 0;
+
+  background-color: blue;
+
+}
+
+#register-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+
+
+}
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.footer {
+  background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+  color: var(--text-color);
+  padding: 50px 0;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--text-color);
+  padding-bottom: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: var(--accent-color);
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+.footer-links li {
+  margin: 10px 15px;
+  animation: fadeInUp 1.6s ease-out;
+}
+
+.footer-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--text-color);
+  transform: translateY(-3px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.8s ease-out;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  transition: transform 0.3s, background-color 0.3s;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.contact-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 2s ease-out;
+}
+
+.contact-info-item {
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.subscribe {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 2.2s ease-out;
+}
+
+.subscribe-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--text-color);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: var(--accent-color);
+}
+
+.company-info {
+  margin-top: 30px;
+  animation: fadeInUp 2.4s ease-out;
+}
+
+.company-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.company-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.quick-links {
+  margin-top: 30px;
+  animation: fadeInUp 2.6s ease-out;
+}
+
+.quick-links h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 10px 0;
+}
+
+.quick-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.quick-links a:hover {
+  color: var(--text-color);
+  transform: translateY(-3px);
+}
+
+.about-section {
+  margin-top: 30px;
+  text-align: left;
+  animation: fadeInUp 2.8s ease-out;
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.animal-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  animation: fadeInUp 3s ease-out;
+}
+
+.animal-images img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.animal-images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.conteudo {
+  opacity: 0;
+  /* Começa invisível */
+  transition: opacity 1s ease-in-out;
+  /* Transição suave de opacidade */
+}
+
+/* Animação de entrada */
+.conteudo.entrou {
+  opacity: 1;
+  /* Torna o conteúdo visível */
+}
+
+/* curvas */
+
+
+.container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e4e9f7;
+
+  text-transform: capitalize;
+}
+
+.container .curved {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+}
+
+.dark-theme .container .curved::before {
+  background-color: #121212;
+  /* Define a cor de fundo para preto */
+}
+
+
+
+/* Estilos da seção de boas-vindas */
+.custom-welcome-section {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/027/988/528/original/a-cute-orange-cat-or-also-known-as-a-ginger-cat-with-paws-icon-on-light-brown-background-2d-animation-4k-animation-background-video.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.custom-welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.custom-welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.custom-welcome-section .cta-button {
+  background-color: #66b0c0;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-welcome-section .cta-button:hover {
+  background-color: #333;
+}
+
+/* Estilos da seção de serviços */
+.custom-services-section {
+  padding: 100px 0;
+}
+
+.custom-services-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.custom-services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.custom-service {
+  width: calc(25% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.custom-service:hover {
+  transform: translateY(-10px);
+}
+
+.custom-service img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.custom-service h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.custom-service p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Estilos da seção de depoimentos */
+.custom-testimonials-section {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.custom-testimonials-section .custom-testimonial-carousel {
+  margin-top: 50px;
+}
+
+.custom-testimonials-section .custom-testimonial {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.custom-testimonials-section .custom-testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.custom-testimonials-section .custom-testimonial p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.custom-testimonials-section .custom-testimonial h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos da seção da equipe */
+.custom-team-section {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.custom-team-section .custom-team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.custom-team-section .custom-team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 5px solid #f44336;
+}
+
+.custom-team-section .custom-team-member h3 {
+  margin-bottom: 10px;
+}
+
+.custom-team-section .custom-team-member p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos da seção do blog */
+.custom-blog-section {
+  padding: 100px 0;
+}
+
+.custom-blog-section .custom-blog-posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.custom-blog-section .custom-blog-post {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.custom-blog-section .custom-blog-post:hover {
+  transform: translateY(-10px);
+}
+
+.custom-blog-section .custom-blog-post img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.custom-blog-section .custom-blog-post h3 {
+  margin-bottom: 10px;
+}
+
+.custom-blog-section .custom-blog-post p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.custom-blog-section .custom-blog-post a {
+  color: #f44336;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-blog-section .custom-blog-post a:hover {
+  color: #333;
+}
+
+/* Estilos da seção de contato */
+.custom-contact-section {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.custom-contact-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.custom-contact-section .custom-contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.custom-contact-section .custom-form-group {
+  margin-bottom: 20px;
+}
+
+.custom-contact-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-contact-section input,
+.custom-contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.custom-contact-section textarea {
+  resize: vertical;
+}
+
+.custom-contact-section button {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-contact-section button:hover {
+  background-color: #555;
+}

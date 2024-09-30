@@ -1,0 +1,240 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Definindo variáveis de cores e outras propriedades */
+:root {
+  --primary-color: #363435; /* Um cinza escuro */
+  --primary-color-dark: #e9e1da; /* Um tom de cinza claro */
+  --secondary-color: #3d553f; /* Uma tonalidade de roxo */
+  --text-dark: #080808; /* Um cinza médio */
+  --text-light: #6d4d2d; /* Um cinza mais claro */
+  --extra-light: #f8f3e9; /* Um branco muito suave */
+  --max-width: 1200px; /* Largura máxima do conteúdo */
+}
+
+/* Resetando margens e preenchimentos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Removendo decoração de link padrão */
+a {
+  text-decoration: none;
+}
+
+/* Estilo global do corpo do documento */
+body {
+  min-height: 100vh;
+  width: 100vh;
+  background-color: #f5edd8;
+  font-family: "Poppins", sans-serif; /* Usando a fonte Poppins para o texto */
+}
+
+/* Estilos dos containers de seção */
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  padding-top: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+transform: translateY(-28%);
+}
+.img{
+
+
+  background-color: #363435;
+}
+
+/* Estilos do conteúdo */
+.content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+/* Estilos do subtítulo */
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos do título */
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  color: #e9e1da;
+  font-weight: 600;
+}
+
+/* Estilos da descrição */
+.description {
+  line-height: 1.5rem;
+  color: var(--primary-color-dark);
+  margin-bottom: 2rem;
+}
+
+/* Estilos dos botões de ação */
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos do botão "Contratar-me" */
+.hire__me {
+
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+/* Estilos do botão "Portfólio" */
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+/* Estilos das imagens */
+.image {
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+
+/* Home */
+.home {
+  padding: 20px;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+.home .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 12px 60px;
+}
+
+body.dark .home .text {
+  color: var(--text-color);
+}
+
+.funcionalidades {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Lilita One", sans-serif;
+
+}
+.botarfonte{
+  font-family: "Lilita One", sans-serif;
+  font-size: 50px;
+  color: #f7a541;
+  text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
+}
+
+.content-container {
+  transform: translateX(500px);
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.text-content {
+  padding: 30px;
+  background-color: #f1f6f4;
+  flex: 1;
+}
+
+.text-content h4 {
+  color: #67b967;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.text-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
